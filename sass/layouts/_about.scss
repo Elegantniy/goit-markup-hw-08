@@ -1,3 +1,6 @@
+.section.about{
+  padding-top: 0;
+}
 .about {
   &__list {
     display: flex;
@@ -24,6 +27,9 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
+  }
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 .about__item {
