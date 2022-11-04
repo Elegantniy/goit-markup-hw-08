@@ -11,3 +11,15 @@ body {
   margin: 0;
   padding: 0;
 }
+.section-title {
+  font-size: 28px;
+  line-height: 0.84;
+  color: var(--primary-title-color);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}

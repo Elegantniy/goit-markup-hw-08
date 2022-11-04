@@ -1,11 +1,18 @@
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .features__item {
-  width: 270px;
+  width: 100%;
   content: "";
   display: block;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .features__text {
@@ -32,7 +39,4 @@
   line-height: 1.71;
   margin-top: 0;
   margin-bottom: 0;
-}
-.section.features {
-  padding-bottom: 0;
 }
