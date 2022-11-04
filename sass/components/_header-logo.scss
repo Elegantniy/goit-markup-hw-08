@@ -1,0 +1,19 @@
+.logo-icon {
+  color: var(--primary-action-color);
+}
+.header__logo-link {
+  color: var(--black-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-icon,
+.header__logo-link {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
