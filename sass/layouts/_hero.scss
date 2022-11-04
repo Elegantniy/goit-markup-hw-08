@@ -4,25 +4,48 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/bckg.jpg);
+    url(../../images/hero/mobile-bckg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   text-align: center;
-  padding: 200px 0;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 60px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/tablet-bckg.jpg);
+    padding: 118px 204px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/bckg.jpg);
+    padding: 200px 0;
+  }
 }
 
 .hero-title {
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
-  width: 700px;
+  max-width: 696px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 700px;
+  }
 }
 .hero-button {
   background-color: var(--primary-action-color);
@@ -33,9 +56,8 @@
   align-items: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  padding: 10px 32px;
   border-style: none;
-  cursor: pointer;
+  padding: 10px 24px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,4 +65,13 @@
   &:focus {
     color: var(--primary-title-color);
   }
+  @media screen and (min-width:1200px) {
+    padding: 10px 32px;
+    
+  }
+}
+
+.hero .container {
+  padding: 0;
+  width: 100%;
 }
