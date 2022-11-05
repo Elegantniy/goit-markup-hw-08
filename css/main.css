@@ -501,14 +501,14 @@ body {
 
 .mobile-menu {
   position: fixed;
-  background-color: white;
   top: 0;
-  left: 0;
+  background-color: white;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   z-index: 1;
+  display: none;
 }
 .mobile-menu > .container {
   height: 100%;
