@@ -2,12 +2,31 @@
   background-color: var(--bckg-footer-color);
   padding: 60px 0px;
   .container {
-    display: flex;
+    text-align: center;
     align-items: baseline;
     justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 89px;
+      padding-left: 76px;
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: inherit;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0;
+    }
   }
 }
-
+.footer-contact {
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -48,18 +67,31 @@
   text-transform: uppercase;
   color: var(--white-color);
 }
+.join {
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
 .join-list {
   display: flex;
   gap: 10px;
   justify-content: center;
-  width: 206px;
+
   a {
     text-decoration: none;
     color: var(--white-color);
     background-color: rgba(255, 255, 255, 0.1);
   }
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+  }
 }
-
+.join-item {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px) / 4);
+  }
+}
 .join-link {
   display: flex;
   align-items: center;
@@ -81,6 +113,17 @@
   fill: var(--white-color);
 }
 /* Subscribe */
+.subscribe {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    margin: 0;
+  }
+}
 
 .subscribe-form {
   background-color: inherit;
@@ -90,10 +133,6 @@
   border-radius: 4px;
   color: var(--white-color);
   padding-left: 16px;
-}
-.subscribe form {
-  display: flex;
-  flex-direction: row;
 }
 
 .subscribe-button {
@@ -132,4 +171,22 @@
   .subscribe-button:focus & {
     fill: var(--black-color);
   }
+}
+
+.subscribe form {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+  justify-content: center;
+}
+.subscribe-thumb {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.subscribe input {
+  margin-bottom: 20px;
 }
