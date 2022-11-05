@@ -73,11 +73,72 @@
           </li>
         </ul>
       </div>
+
       <div class="mobile-menu is-hidden" data-menu>
         <div class="container">
-
+          <div class="menu-nav">
+            <button type="button" class="menu-button" data-menu-close>
+              <svg
+                width="40"
+                height="40"
+                class="menu-close"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  href="./images/header/symbol-defs.svg#icon-menu-close"
+                ></use>
+              </svg>
+            </button>
+            <ul class="menu-nav__list list">
+              <li class="menu-nav__item">
+                <a href="" class="menu-nav__link menu-nav__link--current"
+                  ><span class="nav-item">Студія</span></a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="" class="menu-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-contact">
+            <ul class="menu-contact__list list">
+              <li class="menu-contact__item">
+                <a
+                  href="tel:+380961111111"
+                  class="menu-contact__link tel contact"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-contact__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-contact__link mail contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-soc__list list">
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Instagtam</a>
+                <span class="menu-soc__line"></span>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Twitter</a>
+                <span class="menu-soc__line"></span>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">Facebook</a>
+                <span class="menu-soc__line"></span>
+              </li>
+              <li class="menu-soc__item">
+                <a href="" class="menu-soc__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
       </div>
     </header>
 
@@ -632,5 +693,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
