@@ -1,14 +1,23 @@
 .header {
   border-bottom: 1px solid #ececec;
   .container {
-    align-items: baseline;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      width: 1200px;
+    }
   }
 }
 .site-nav__item {
   position: relative;
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 .site-nav__link--current {
@@ -49,21 +58,6 @@
 }
 
 .contact-list {
-  margin-left: auto;
-  gap: 30px;
-  &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
 .contact-list__item:hover,
@@ -80,10 +74,65 @@
     fill: var(--primary-action-color);
   }
 }
-.nav,
 .site-nav,
-.site-nav__list,
-.contact-list {
+.nav-thumb,
+.contact-thumb {
   display: flex;
   align-items: center;
+}
+
+.site-nav__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 87px;
+    gap: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+    align-items: baseline;
+    margin-left: 92px;
+  }
+}
+
+.contact-list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-button {
+  display: block;
+  background-color: transparent;
+  margin-left: auto;
+  border: 0;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
