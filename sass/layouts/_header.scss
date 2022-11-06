@@ -135,6 +135,8 @@
   padding-top: 48px;
   padding-bottom: 48px;
   z-index: 1;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
   > .container {
     height: 100%;
     // display: flex;
@@ -145,6 +147,9 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
 }
 
 .menu-button {

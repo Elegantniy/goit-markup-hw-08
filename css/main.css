@@ -508,6 +508,8 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   z-index: 1;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 .mobile-menu > .container {
   height: 100%;
@@ -518,6 +520,10 @@ body {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
 }
 
 .menu-button {
