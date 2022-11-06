@@ -559,11 +559,20 @@ body {
   margin-left: auto;
   border: 0;
   padding: 0;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
+}
+.menu-button:hover {
+  fill: var(--primary-action-color);
+}
+.menu-button:focus {
+  fill: var(--primary-action-color);
 }
 
 .menu-nav__list {
