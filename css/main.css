@@ -289,6 +289,19 @@ body {
   color: var(--placeholder-color);
 }
 
+.check-icon {
+  display: flex;
+  width: 13px;
+  height: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .check-icon {
+    width: 16px;
+    height: 15px;
+    display: inherit;
+  }
+}
+
 .checkbox {
   display: flex;
   justify-content: center;
@@ -297,26 +310,14 @@ body {
   margin-bottom: 30px;
 }
 
-.check-icon {
-  display: inline-block;
-}
-@media screen and (min-width: 1200px) {
-  .check-icon {
-    display: inherit;
-  }
-}
-
 .check-text {
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   color: var(--primary-text-color);
   display: inline-block;
   align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .check-text {
-    display: flex;
-  }
+  justify-content: center;
 }
 .check-text span {
   width: 16px;
@@ -324,13 +325,19 @@ body {
   border: 2px solid var(--black-color);
   border-radius: 2px;
   margin-right: 5px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   fill: transparent;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width 1200px) {
+  .check-text span {
+    display: flex;
+    font-size: 14px;
+  }
 }
 
 .input-check:checked + .check-text span {
