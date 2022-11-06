@@ -138,11 +138,10 @@
   display: flex;
   width: 13px;
   height: 12px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 15px;
     display: inherit;
-    
   }
 }
 .checkbox {

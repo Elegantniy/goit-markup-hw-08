@@ -34,6 +34,11 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10;
+  text-align: center;
+  @media screen and (min-width:1200px) {
+    text-align: inherit;
+    
+  }
 }
 
 .features .text {
