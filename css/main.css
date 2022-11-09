@@ -1169,12 +1169,20 @@ body {
 
 .filter-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
-
-.filter-item {
-  padding-right: 8px;
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -1224,11 +1232,21 @@ body {
 
 .project-card {
   border: 1px solid #eee;
-  max-width: 370px;
-  width: calc((100% - 60px) / 3);
+  max-width: 450px;
 }
-.project-card img {
-  max-width: 100%;
+@media screen and (min-width: 768px) {
+  .project-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card {
+    max-width: 370px;
+    width: calc((100% - 60px) / 3);
+  }
+  .project-card img {
+    max-width: 100%;
+  }
 }
 
 .project-link {

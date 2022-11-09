@@ -22,10 +22,16 @@
 }
 .project-card {
   border: 1px solid #eee;
-  max-width: 370px;
-  width: calc((100% - 60px) / 3);
-  img {
-    max-width: 100%;
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    width: calc((100% - 60px) / 3);
+    img {
+      max-width: 100%;
+    }
   }
 }
 
