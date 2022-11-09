@@ -1185,6 +1185,15 @@ body {
   }
 }
 
+.filter-item {
+  padding-bottom: 7px;
+}
+@media screen and (min-width: 768px) {
+  .filter-item {
+    padding-bottom: 0;
+  }
+}
+
 .filter-btn {
   color: var(--primary-title-color);
   background-color: #f5f4fa;
