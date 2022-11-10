@@ -599,6 +599,11 @@ body {
   letter-spacing: 0.02em;
   color: black;
 }
+@media screen and (max-width: 479px) {
+  .menu-nav__link {
+    font-size: 35px;
+  }
+}
 
 .menu-contact__list {
   display: flex;
@@ -616,7 +621,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .menu-contact__link.tel {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 .menu-contact__link.mail {

@@ -191,6 +191,9 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: black;
+  @media screen and (max-width: 479px) {
+    font-size: 35px;
+  }
 }
 
 .menu-contact__list {
@@ -207,7 +210,7 @@
     letter-spacing: 0.02em;
     color: var(--primary-action-color);
     @media screen and (max-width: 479px) {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
   &.mail {
