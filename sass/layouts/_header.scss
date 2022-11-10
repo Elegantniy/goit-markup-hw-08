@@ -143,6 +143,7 @@
     // flex-direction: column;
     justify-content: space-between;
     overflow: scroll;
+    padding: 0 40px;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -161,6 +162,11 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.js-close-menu {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -195,11 +201,15 @@
 }
 .menu-contact__link {
   &.tel {
+    
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-action-color);
+    @media screen and (max-width:479px) {
+      font-size: 30px ;
+    }
   }
   &.mail {
     font-weight: 500;
@@ -220,8 +230,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-
   color: var(--primary-action-color);
+  @media screen and (max-width:479px) {
+    font-size: 12px;
+  }
 }
 
 .menu-soc__line {

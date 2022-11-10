@@ -40,6 +40,7 @@
   text-transform: uppercase;
   margin: 0 auto 30px auto;
   max-width: 696px;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
@@ -63,6 +64,10 @@
   &:hover,
   &:focus {
     color: var(--primary-title-color);
+  }
+    @media screen and (max-width:479px) {
+    font-size: 14px;
+    
   }
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;

@@ -21,9 +21,9 @@
   }
 }
 .footer-contact {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .footer-item:not(:last-child) {
@@ -67,9 +67,9 @@
   color: var(--white-color);
 }
 .join {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .join-list {
