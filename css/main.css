@@ -1324,4 +1324,15 @@ body {
 }
 .project-link:hover .project-overlay-text, .project-link:focus .project-overlay-text {
   transform: translateY(0%);
+}
+@media screen and (max-width: 479px) {
+  .project-overlay-text {
+    font-size: 14px;
+    transform: translateY(110%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .project-overlay-text {
+    transform: translateY(110%);
+  }
 }/*# sourceMappingURL=main.css.map */

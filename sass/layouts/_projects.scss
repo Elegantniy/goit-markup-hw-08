@@ -74,7 +74,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
@@ -82,5 +81,12 @@
   .project-link:hover &,
   .project-link:focus & {
     transform: translateY(0%);
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    transform: translateY(110%);
+  }
+  @media screen and (min-width: 767px) {
+    transform: translateY(110%);
   }
 }
