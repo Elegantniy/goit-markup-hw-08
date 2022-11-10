@@ -201,14 +201,13 @@
 }
 .menu-contact__link {
   &.tel {
-    
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-action-color);
-    @media screen and (max-width:479px) {
-      font-size: 30px ;
+    @media screen and (max-width: 479px) {
+      font-size: 30px;
     }
   }
   &.mail {
@@ -231,7 +230,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--primary-action-color);
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
     font-size: 12px;
   }
 }
